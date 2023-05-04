@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root{     
+    --orange:#ff7800;     
+    --black:#130f40;     --light-color:#666;     
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);     
+    --border:.2rem solid rgba(0,0,0,.1);     
+    --outline:.1rem solid rgba(0,0,0,.1);     
+    --outline-hover:.2rem solid var(--black); 
+}  
+*{     
+    font-family: 'Poppins';     
+    margin:0; 
+    padding:0;     
+    box-sizing: border-box;     
+    outline: none; border:none;     
+    text-decoration: none;     
+    text-transform: capitalize;     
+    transition: all .2s linear; 
+}  
+html{     
+    font-size: 62.5%;     
+    overflow-x: hidden;     
+    scroll-behavior: smooth;     
+    scroll-padding-top: 7rem; 
+}  
+body{     
+    background:#eee; 
+}  
+section{     
+    padding:2rem 9%; 
+}  
+.heading{     
+    text-align: center;     
+    padding:2rem 0;     
+    padding-bottom: 3rem;     
+    font-size: 3.5rem;     
+    color:var(--black); 
+}  
+.heading span{     
+    background: var(--orange);     
+    color:#fff;     
+    display: inline-block;     
+    padding:.5rem 3rem;     
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%); 
+}
+.btn{     
+    margin-top: 1rem;     
+    display: inline-block;     
+    padding:.8rem 3rem;     
+    font-size: 1.7rem;     
+    border-radius: .5rem;     
+    border:.2rem solid var(--black);     
+    color:var(--black);     
+    cursor: pointer;     
+    background: none; 
+}  
+.btn:hover{     
+    background: var(--orange);     
+    color:#fff; 
+}  
+.header{     
+        position: fixed;     
+        top:0; left:0; right: 0;     
+        z-index: 1000;     
+        display: flex;     
+        align-items: center;     
+        justify-content: space-between;     
+        padding:2rem 9%;     
+        background:#fff;     
+        box-shadow: var(--box-shadow); 
+}  
+.header .logo{     
+    font-size: 2.5rem;     
+    font-weight: bolder;     
+    color:var(--black); 
+}  
+.header .logo i{     
+    color:rgb(66, 226, 231);
+     
+}  
+.header .logo i1{     
+    color:rgb(119, 119, 119);
+     
+}
+.header .navbar a{    
+    font-size: 1.7rem;     
+    margin:0 1rem;     
+    color:var(--black); 
+}  
+.header .navbar .dropbtn{    
+  background-color: #fff;
+  font-size: 1.7rem;     
+  margin:0 1rem;     
+  color:var(--black); 
+} 
+.header .navbar a:hover{     
+    color:var(--orange); 
+}  
+.header .icons div{     
+    height: 4.5rem;     
+    width: 4.5rem; 
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+.header .icons div:hover{     
+    background:rgb(67, 214, 240) ;
+    color:#eee;
+}
+#menu-btn{
+    display:none;
+}
+.header .search-form{
+    position: absolute;
+    top: 110%; right: 2rem;
+    width: 50rem;
+    height: 4.5rem;
+    background: rgb(255, 255, 255);
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+}
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .search-form label:hover{
+    color: rgb(67, 214, 240);
+}
+.features .box.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(30rem, 1fr));
+    gap:1.5rem;
+}
+.features .box.container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+.features .box.container .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+.container2{
+    display:flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    box-sizing: border-box; 
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+.container2 div{
+    width: 480px;
+    height: 330px;
+    background-color: rgb(225, 226, 226);
+    margin: 30px;
+    margin-bottom: 20px;
+    border: 3px solid;
+    border-color: rgb(151, 151, 151);
+    text-align: justify;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    padding-top: 10px;
+}
+.container3{
+    display:flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    box-sizing: border-box; 
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+.container3 div{
+    width: 980px;
+    height: 330px;
+    margin: 30px;
+    margin-bottom: 20px;
+    text-align: justify;
+
+}
+p{
+    font-size: 12pt;
+}
+a{
+    font-size: 30pt;
+    color: rgb(1, 132, 255);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+  }
+  .container4{
+   
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .container4 .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container4 .content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+  .content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+  }
+  .content .left-side .details{
+    margin: 14px;
+    text-align: center;
+  }
+  .content .left-side .details i{
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+  }
+  .content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content .left-side .details .text-one,
+  .content .left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+  }
+  .container4 .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+  }
+  .content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+  }
+  .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  .right-side .input-box input,
+  .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+  .right-side .message-box{
+    min-height: 110px;
+  }
+  .right-side .input-box textarea{
+    padding-top: 6px;
+  }
+  .right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(88, 216, 233)}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+  
+ 
